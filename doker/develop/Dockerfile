@@ -1,3 +1,8 @@
-FROM python:3.6
+FROM python:3.6-alpine
 
-COPY ../../src /opt/app
+ADD src /opt/app
+WORKDIR /opt/app
+
+RUN pip install -r requirements.txt gunicorn
+
+

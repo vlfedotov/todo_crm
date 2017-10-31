@@ -20,6 +20,6 @@ def get_app(loop):
 
 async def init(loop, port):
     app = get_app(loop)
-    server = await loop.create_server(app.make_handler(), '127.0.0.1', port)
-    logger.info('Server started on 127.0.0.1:{}'.format(port))
+    server = await loop.create_server(app.make_handler(), '0.0.0.0', port)
+    logger.info('Server started on 0.0.0.0:{}'.format(port))
     return server

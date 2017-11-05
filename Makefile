@@ -1,4 +1,4 @@
-TEST_DOCKER = "docker/ci_unit/docker-compose.yml" 
+TEST_DOCKER = "docker/ci/docker-compose.yml" 
 DEVELOP_DOCKER = "docker/develop/docker-compose.yml" 
 
 .PHONY: test-build test

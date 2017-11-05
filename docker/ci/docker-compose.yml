@@ -4,4 +4,4 @@ services:
   todo_crm:
     build:
       context: ../../
-      dockerfile: docker/ci_unit/Dockerfile
+      dockerfile: docker/ci/Dockerfile

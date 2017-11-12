@@ -3,7 +3,7 @@ node {
         stage ('Building app') {
             sh 'make test-build'
         }
-        stage ('Run postman tests') {
+        stage ('Run tests') {
             sh 'make test'
         }
     } finally {
